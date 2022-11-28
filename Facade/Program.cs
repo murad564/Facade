@@ -1,7 +1,7 @@
 ﻿namespace Facade;
 
 
-public interface Shape
+interface Shape // implement
 {
     void draw();
 }
@@ -13,10 +13,10 @@ public class Rectangle : Shape
     }
 }
 
-public class Square : Shape
+public class Square : Shape // implement
 {
 
-    public void draw()
+    public void draw() // override 
     {
         Console.WriteLine("Square => draw()");
     }
@@ -24,7 +24,7 @@ public class Square : Shape
 
 public class Circle : Shape
 {
-   public void draw()
+   public void draw() // override
     {
         Console.WriteLine("Circle => draw()");
     }
